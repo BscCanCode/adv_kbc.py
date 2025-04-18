@@ -49,3 +49,7 @@ This is an updated KBC-style quiz script, built in April 2025, using Python list
 ## NOTE
 - README crafted with assistance from an AI chatbot.
 - Kept raw to document my learning process—planning to refine later.
+
+## important
+- I uploaded the file again because just added:print(f"The question for Rs.{levels[i]} is:")
+- Added print("----------------------------------------------------") for better readability and proper look
