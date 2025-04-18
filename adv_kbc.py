@@ -9,10 +9,13 @@ levels=[1000,5000,10000,50000,100000,150000,200000]
 money=0
 for i in range(0,len(questions)):
     question=questions[i]
+    print("------------------------------------------------")
+    print(f"The question for Rs.{levels[i]} is:")
     print(question[0])
     print(f"1.{question[1]}\t2.{question[2]}\n3.{question[3]}\t4.{question[4]}")
     try:
         reply=int(input("Enter the input between 1-4:"))
+        print("----------------------------------------------------")
         if 0<reply<=4:
             if reply==question[5]:
                 print(f"Answer is correct,you won Rs.{levels[i]}")
@@ -24,6 +27,7 @@ for i in range(0,len(questions)):
                     money=200000
             else:
                 print("Answer is incorrect!")
+                print("---------------------------------------------------")
                 print(f"Amount you are taking home is Rs.{money}")
                 break
         else:
